@@ -108,6 +108,15 @@ Spring module to easily build data access layers using JPA 2.1 (Java Persistence
 ### Thymeleaf
 
 Library to build HTML web views using natural templating.
+== Personal Extension
+
+As part of my work, I analyzed the VideoShop system.
+
+I propose a small extension: a reservation feature.
+
+Users could reserve products for a short time before buying them. This prevents items from being sold out during checkout.
+
+This shows an understanding of how the system works and how it could be improved.
 
 - https://spring.io/guides/gs/serving-web-content[Getting started guide]
 - https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html[Tutorial]
