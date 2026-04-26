@@ -25,7 +25,15 @@
                 <div class="content">
                     <div class="description" th:text="${{disc.price}}">9.99 €</div>
                 </div>
-                <div class="extra content" th:text="${disc.genre}"> Action</div>
+             <div class="extra content">
+    <span th:text="${disc.genre}">Action</span>
+
+    <br><br>
+
+    <button onclick="alert('Product reserved!')">
+        Reserve Product
+    </button>
+</div>
             </div>
         </div>
         </section>
