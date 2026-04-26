@@ -1,0 +1,22 @@
+package videoshop.catalog;
+
+import java.time.LocalDateTime;
+
+public class Reservation {
+
+    private String productName;
+    private LocalDateTime reservedAt;
+
+    public Reservation(String productName) {
+        this.productName = productName;
+        this.reservedAt = LocalDateTime.now();
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public LocalDateTime getReservedAt() {
+        return reservedAt;
+    }
+}
