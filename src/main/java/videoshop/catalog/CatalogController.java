@@ -86,7 +86,17 @@ class CatalogController {
 		return "detail";
 	}
 
-	@PostMapping("/disc/{disc}/comments")
+
+
+@PostMapping("/disc/{disc}/reserve")
+public String reserveDisc(@PathVariable Disc disc) {
+
+    System.out.println("Reserved disc: " + disc.getName());
+
+    return "redirect:/disc/" + disc.getId();
+}
+	
+
 	public String comment(@PathVariable Disc disc, @Valid CommentAndRating form, Errors errors) {
 		if (errors.hasErrors()) {
 			return "detail";

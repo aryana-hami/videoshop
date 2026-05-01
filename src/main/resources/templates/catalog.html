@@ -25,16 +25,19 @@
                 <div class="content">
                     <div class="description" th:text="${{disc.price}}">9.99 €</div>
                 </div>
-             <div class="extra content">
+            <div class="extra content">
     <span th:text="${disc.genre}">Action</span>
 
     <br><br>
+
 
 	<form th:action="@{/disc/{disc}/reserve(disc=${disc.id})}" method="post">
 	    <button class="ui button primary" type="submit">
 	        Reserve Product
 	    </button>
 	</form>
+
+
 </div>
             </div>
         </div>
