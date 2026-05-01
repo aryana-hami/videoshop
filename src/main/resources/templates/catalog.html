@@ -30,9 +30,11 @@
 
     <br><br>
 
-    <button onclick="alert('Product reserved!')">
-        Reserve Product
-    </button>
+	<form th:action="@{/disc/{disc}/reserve(disc=${disc.id})}" method="post">
+	    <button class="ui button primary" type="submit">
+	        Reserve Product
+	    </button>
+	</form>
 </div>
             </div>
         </div>

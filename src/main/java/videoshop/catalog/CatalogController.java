@@ -103,6 +103,15 @@ class CatalogController {
 	 *
 	 * @author Oliver Gierke
 	 */
+	
+	
+	@PostMapping("/disc/{disc}/reserve")
+	public String reserveDisc(@PathVariable Disc disc) {
+
+	    System.out.println("🔥 RESERVED: " + disc.getName());
+
+	    return "redirect:/disc/" + disc.getId();
+	}
 	interface CommentAndRating {
 
 		@NotEmpty
